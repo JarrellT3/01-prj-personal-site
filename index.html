@@ -1,3 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Developer — Front-end Developer</title>
+  <meta name="description" content="Alex Developer — front-end developer portfolio showcasing skills, projects and contact information.">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+
+  <!-- Fixed Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#hero">Alex Developer</a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Alex Developer</h1>
+          <p class="subtitle">Front-end Developer — building accessible, performant interfaces.</p>
+          <p class="tagline">I design and build modern web experiences with a focus on usability and clean code.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn outline" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Simple SVG avatar — no external images required -->
+          <svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" class="avatar">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00E0FF"/>
+                <stop offset="1" stop-color="#6A4CFF"/>
+              </linearGradient>
+            </defs>
+            <rect rx="20" width="220" height="220" fill="#0E1726"/>
+            <circle cx="110" cy="84" r="44" fill="url(#g)" opacity="0.95"/>
+            <rect x="40" y="140" width="140" height="20" rx="10" fill="#122032"/>
+            <text x="110" y="90" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="28" font-weight="700">AD</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="lead">I'm a front-end developer with a passion for clean user interfaces, accessibility, and performance. I enjoy turning designs into fast, responsive websites and learning new tools to improve developer workflows.</p>
+        <div class="about-grid">
+          <div>
+            <h3>Background</h3>
+            <p>Experience working with HTML, CSS, JavaScript and modern build tools. I work closely with designers and backend developers to ship polished products.</p>
+          </div>
+          <div>
+            <h3>Approach</h3>
+            <p>I focus on semantic HTML, component-based structure, and thoughtful UX. Performance and accessibility are considered from the start.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="lead">A selection of tools and technologies I use regularly.</p>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fas fa-code icon"></i><h4>HTML &amp; CSS</h4><p>Semantic markup and responsive layouts.</p></div>
+          <div class="skill-card"><i class="fab fa-js-square icon"></i><h4>JavaScript</h4><p>ES6+, DOM, and UI interactions.</p></div>
+          <div class="skill-card"><i class="fab fa-react icon"></i><h4>UI Libraries</h4><p>Component-based development and tooling.</p></div>
+          <div class="skill-card"><i class="fas fa-bolt icon"></i><h4>Performance</h4><p>Optimizing load times and runtime performance.</p></div>
+          <div class="skill-card"><i class="fas fa-universal-access icon"></i><h4>Accessibility</h4><p>Keyboard navigation and ARIA best practices.</p></div>
+          <div class="skill-card"><i class="fab fa-git-alt icon"></i><h4>Version Control</h4><p>Git workflows and collaboration.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="lead">Selected work — click through to view live demos or source.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p class="proj-desc">A responsive dashboard UI with real-time charts and clean components.</p>
+            <div class="proj-actions">
+              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p class="proj-desc">A small e-commerce UI prototype focusing on accessible forms and checkout flow.</p>
+            <div class="proj-actions">
+              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p class="proj-desc">A performance-optimized landing page with smooth animations and minimal payload.</p>
+            <div class="proj-actions">
+              <a class="btn" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn outline" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Interested in working together? Reach out.</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:alex@example.com"><i class="fas fa-envelope"></i> alex@example.com</a></p>
+          </div>
+          <div class="contact-card social">
+            <h3>Social</h3>
+            <p class="social-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year">2026</span> Alex Developer. Built with HTML &amp; CSS.</p>
+      <p class="footer-links">Designed for clarity • <a href="#">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to update year and toggle mobile nav
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    toggle && toggle.addEventListener('click', ()=>{
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
